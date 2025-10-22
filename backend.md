@@ -24,6 +24,12 @@ Al generar el proyecto ([Spring Initializr](https://start.spring.io)) selecciona
     <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
     <version>3.0.0-M1</version>
 </dependency>
+
+```
+
+> Nota: añade `spring-boot-starter-oauth2-resource-server` y `org.springdoc:springdoc-openapi-starter-webmvc-ui` manualmente despues de la explicacion.
+
+```
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
@@ -33,8 +39,6 @@ Al generar el proyecto ([Spring Initializr](https://start.spring.io)) selecciona
     <artifactId>spring-boot-starter-security</artifactId>
 </dependency>
  ```
-
-> Nota: añade `spring-boot-starter-oauth2-resource-server` y `org.springdoc:springdoc-openapi-starter-webmvc-ui` manualmente despues de la explicacion.
 
 ---
 
