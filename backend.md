@@ -13,12 +13,28 @@ Al generar el proyecto ([Spring Initializr](https://start.spring.io)) selecciona
 - Spring Data JPA
 - PostgreSQL Driver
 - Spring Boot DevTools
-- Lombok (opcional, para reducir boilerplate)
-- Spring Security
-- OAuth2 Resource Server (`spring-boot-starter-oauth2-resource-server`)
-- springdoc OpenAPI UI (`springdoc-openapi-starter-webmvc-ui` o `springdoc-openapi-ui`)
+- Lombok
+- Spring Security NO SELECCIONAR
+- OAuth2 Resource Server (`spring-boot-starter-oauth2-resource-server`) NO SELECCIONAR
+- springdoc OpenAPI UI (`springdoc-openapi-starter-webmvc-ui` o `springdoc-openapi-ui`) NO APARECE
 
-> Nota: si usas Gradle/Maven añade `spring-boot-starter-oauth2-resource-server` y `org.springdoc:springdoc-openapi-starter-webmvc-ui` manualmente si no aparecen.
+```
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>3.0.0-M1</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+ ```
+
+> Nota: añade `spring-boot-starter-oauth2-resource-server` y `org.springdoc:springdoc-openapi-starter-webmvc-ui` manualmente despues de la explicacion.
 
 ---
 
