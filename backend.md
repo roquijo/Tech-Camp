@@ -7,7 +7,7 @@ Construir un backend funcional con Spring Boot, conectar a PostgreSQL, proteger 
 
 ## 1. Dependencias necesarias (al crear el proyecto)
 
-Al generar el proyecto (Spring Initializr) selecciona al menos:
+Al generar el proyecto ([Spring Initializr](https://start.spring.io)) selecciona al menos:
 
 - Spring Web
 - Spring Data JPA
