@@ -22,7 +22,7 @@ Al generar el proyecto ([Spring Initializr](https://start.spring.io)) selecciona
 <dependency>
     <groupId>org.springdoc</groupId>
     <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-    <version>3.0.0-M1</version>
+    <version>2.8.0</version>
 </dependency>
 
 ```
