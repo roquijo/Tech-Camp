@@ -60,6 +60,7 @@ mvn -version
 - **IntelliJ IDEA:** https://www.jetbrains.com/idea/download  
 - **VS Code + extensiones (Java, Spring Boot):** opcional
 - **Cursor:** https://cursor.com/download
+  
 ---
 
 ## 🧱 4. WSL 2 (Windows Subsystem for Linux) — **Requiere Admin**
@@ -152,6 +153,14 @@ ng version
 ```
 
 ---
+
+## 🐼 9. Dbeaver (Windows)
+**Descarga:** [https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe](https://dbeaver.io/download)
+
+## ⚙️ Requisitos previos
+Antes de instalar DBeaver asegúrate de tener instalado:
+- **Java 17 o superior** (ya instalado previamente para el backend con Spring Boot).
+- **PostgreSQL** (ya configurado en Docker o localmente).
 
 ---
 
