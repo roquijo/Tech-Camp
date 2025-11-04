@@ -24,7 +24,17 @@ Al generar el proyecto ([Spring Initializr](https://start.spring.io)) selecciona
     <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
     <version>2.8.0</version>
 </dependency>
+```
+- Clase para configuracion de swagger
 
+```
+@OpenAPIDefinition(info = @Info(title = "API de Productos DEVSENIOR", description = "Conjunto de servicios destinados a realizar operaciones basicas sobre productos", version = "v1"), servers = {
+        @Server(url = "${server.servlet.context-path}", description = "Generate server url")
+})
+@SecurityScheme(name = "client-credentials", type = SecuritySchemeType.OAUTH2, flows = @OAuthFlows(clientCredentials = @OAuthFlow(tokenUrl = "${spring.oAuthFlow.tokenUrl}")))
+@Configuration
+public class OpenApiConfig {
+}
 ```
 
 > Nota: añade `spring-boot-starter-oauth2-resource-server` y `org.springdoc:springdoc-openapi-starter-webmvc-ui` manualmente despues de la explicacion.
