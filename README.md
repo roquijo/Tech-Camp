@@ -106,7 +106,4 @@ Un frontend conectado al backend, con autenticación funcional y comunicación s
 ## ✨ Autor y Créditos
 
 **Instructor:** Jorge Eliecer Rojas  
-**Duración:** 4 horas  
 **Nivel:** Introductorio - Intermedio  
-
-> “Aprende a construir software real, seguro y moderno en un solo día.”
