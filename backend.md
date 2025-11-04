@@ -64,50 +64,38 @@ Guarda este bloque en `src/main/resources/application.yml` y ajústalo a tus cre
 ```yaml
 server:
   port: 8080
+  servlet:
+    context-path: /producto-api
 
 spring:
+  application:
+    name: producto-api
+
   datasource:
-    url: jdbc:postgresql://localhost:5432/techcamp
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: postgres_password
+    password: admin
     driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
-      ddl-auto: update   # en producción usar validate o none
+      ddl-auto: none
     show-sql: true
     properties:
       hibernate:
+        format_sql: true
+        use_sql_comments: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
 
-  jackson:
-    serialization:
-      indent_output: true
-
-logging:
-  level:
-    root: INFO
-    org.hibernate.SQL: DEBUG
-
-# Configuración de Spring Security como Resource Server (Keycloak)
-spring:
   security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/techcamp-realm
+          issuer-uri: http://localhost:8081/realms/tech-camp-realm
 
-# Springdoc (Swagger) - configuración básica
-springdoc:
-  api-docs:
-    path: /v3/api-docs
-  swagger-ui:
-    enabled: true
-    path: /swagger-ui.html
-    oauth:
-      clientId: spring-api
-      clientSecret: YOUR_CLIENT_SECRET_IF_APPLICABLE
-      appName: "TechCamp API"
+  oAuthFlow:
+    tokenUrl: http://localhost:8081/realms/tech-camp-realm/protocol/openid-connect/token
 ```
 
 > Ajusta `issuer-uri` / `jwk-set-uri` según el host y puerto donde corra Keycloak en tu entorno.
