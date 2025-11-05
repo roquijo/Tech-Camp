@@ -72,15 +72,5 @@ npm install keycloak-js
 
 ---
 
-### 7. Pruebas y Despliegue
-- Verificar el consumo de API autenticada desde el navegador.
-- Generar el build de producción:
-```bash
-ng build --configuration production
-```
-- Explicación: el build se puede servir desde **Nginx** o integrarse en un contenedor **Docker**.
-
----
-
 ## ✅ Resultado Esperado
 Una aplicación Angular funcional, integrada con el backend y autenticada con Keycloak, capaz de listar y crear datos protegidos mediante token.
